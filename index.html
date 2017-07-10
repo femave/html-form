@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>A Simple Form</h1>
+	<h3>Form Foundamentals</h3>
+	<form action="">
+		<fieldset>
+			<legend>Customer Info</legend>
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="rname" placeholder="Enter your name" required autofocus>
+			</div>
+			<div>
+				<label for="phone">Telephone</label>
+				<input type="tel" name="phone" id="phone" placeholder="Pattern: +1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			</div>
+			<div>
+				<label for="email">Email address</label>
+				<input type="email" name="email" placeholder="Enter your email adress" required>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Books</legend>
+			<input name="type" list="types">
+			<datalist id="types">
+				<option value="adventures">
+				<option value="sciense">
+				<option value="informatics">
+			</datalist>
+			<label for="quantity">Quantity (Maximun 5)</label>
+			<input type="number" min="1" max="5">
+		</fieldset>
+		<input type="submit">
+	</form>
+</body>
+</html>
